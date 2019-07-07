@@ -94,3 +94,10 @@ Git'de merge işlemi çok basit iki adımda yapılır.
 
 1. `git checkout` komutu ile değişikliklerin aktarılacağı hedef branch'inizi aktif (HEAD) hale getirirsiniz.
 2. `git merge` komutu ile kaynak branch'deki commit edilmiş değişiklikler HEAD'e entegre edilir.
+
+# Uzun Soluklu Branch'ler
+İkinci türdeki branch'ler ise daha üst seviyede anlam taşırlar ve yeni özellikler, bug fix ve deneysel çalışmalar gibi odaklanmış konular yerine projenizi stabil, test ve development gibi aşamalarını temsil ederler. Bu tür branch’ler projeniz üzerinde geliştirme yaptığınız sürece varlıklarını sürdüreceklerdir. Tipik olarak bu tür branch'ler ile ilgili aşağıdaki kurallar geçerlidir
+
+Genelde bu tür uzun soluklu branch’ler üzerinde doğrudan değişiklik yapmazsınız. Çalışmalarınızı kısa vadeli branch’ler üzerinde yaparak değişiklikleri bu branch'lere entegre edersiniz.
+Uzun soluklu branch'ler arasında bir hiyerarşi vardır. Genellikle master branch projenizin stabil versiyonudur ve hiyerarşik olarak bir altında geliştirmelerinizi entegre ettiğiniz ve daha az stabil olabilen development branch'i yer alır.
+Uzun soluklu branch'lerin hangi kriterlere göre oluşturulacağı, nasıl yönetileceği ve isimlerinin ne olacağı genellikle çalışan ekibe ve projeye göre değişebilir. Ancak her hâlükârda nasıl bir branching stratejisinin izleneceğine ekip olarak fikir birliği içinde karar verilmelidir.
